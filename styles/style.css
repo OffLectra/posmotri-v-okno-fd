@@ -9,6 +9,8 @@ html {
 }
 
 .page {
+  display: flex;
+  justify-content: center;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,6 +18,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  align-items: center;
+  
 }
 
 h1,
@@ -49,3 +53,144 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+.content {
+  display: grid;
+  grid-template-areas: 
+    "result details";
+  flex-direction: row;
+  inline-size: 1140px;
+  block-size: 534px;
+  gap: 30px;
+  align-items: end;
+
+}
+
+.result {
+  grid-area: result;
+  inline-size: 100%;
+  
+  
+}
+
+.content__details {
+  display: grid;
+  grid-area: details;
+  /* block-size: 100%; */
+  inline-size: 399px;
+  align-items: end;
+  grid-row-gap: 26px;
+  
+  
+}
+
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+
+}
+
+.content__list-container {
+  block-size: 298px;
+  overflow-y: scroll;
+}
+
+
+.result__video-container {
+  height: 386px;
+  width: 711px;
+  margin-bottom: 16px;
+
+  
+  
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list-item {
+
+}
+
+.content__video-card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+
+}
+
+.content__video-card-thumbnail {
+  width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+
+.search-form__fieldset-title {
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 21.6px;
+  text-align: left;
+  
+
+}
+
+.title {
+  font-family: "Oswald";
+  font-size: 75px;
+  font-weight: 700;
+  line-height: 70.5px;
+  text-align: left;
+  color: rgba(255, 255, 255, 1);
+  text-transform: uppercase;
+
+}
+
+.content__accent {
+  color: rgba(84, 80, 80, 1);
+}
+
+.content__card-link {
+  color: rgba(255, 255, 255, 1);
+  text-decoration: none;
+
+}
+
+/* .content__video-card-title {
+  text-transform: uppercase;
+  font-family: "Oswald";
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-align: left;
+
+} */
+
+
+/* .content__video-card-description {
+  font-family: "Fira Sans Condensed";
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  word-spacing: 5px;
+
+} */
